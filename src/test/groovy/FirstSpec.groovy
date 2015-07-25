@@ -3,7 +3,7 @@ import spock.lang.Specification
 /**
  * Created by salavat on 26.07.2015.
  */
-class FirstTest extends Specification {
+class FirstSpec extends Specification {
 
     def "lets test it" () {
         expect:
