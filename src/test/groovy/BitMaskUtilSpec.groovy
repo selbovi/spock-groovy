@@ -19,4 +19,17 @@ class BitMaskUtilSpec extends Specification {
         5 | '101'
 
     }
+
+    @Unroll
+    def "test enum BitEnum.Bits"() {
+        expect:
+        BitEnum.Bits.valueOf(a).value == b
+
+        where:
+        a       | b
+        'ONE'   | 1
+        'TWO'   | 2
+        'FOUR'  | 4
+        'EIGHT' | 8
+    }
 }
